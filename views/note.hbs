@@ -1,21 +1,33 @@
 <h1>New ToDo</h1>
 <form>
-    <label for="title">
-        Title <input name="title">
-    </label>
-    <label for="desc">
-        Description <textarea rows="2"></textarea>
-    </label>
-    <label for="importance">
-        Importance <input name="importance">
-    </label>
-    <label for="dueDate">
-        Due date <input name="dueDate" type="date">
-    </label>
-    <label>
-        <input type="checkbox" name="finished" value="finished">
-        Finished
-    </label>
-    <button type="button">Send</button>
-    <button type="button">Cancel</button>
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input id="title" type="text">
+    </div>
+
+    <div class="form-group">
+        <label for="desc">Description</label>
+        <textarea rows="2" id="desc"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="importance">Importance</label>
+        <input id="importance" type="text">
+    </div>
+
+
+    <div class="form-group">
+        <label for="dueDate">Due date</label>
+        <input id="dueDate" type="date">
+    </div>
+
+
+    <div class="form-group">
+        <label for="finished">Finished</label>
+        <input type="checkbox" id="finished">
+    </div>
+
+
+    <a href="#">Send</a>
+    <a href="#">Cancel</a>
 </form>

@@ -1,8 +1,43 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.5em;
+}
+
+input[type=text],input[type=date], textarea {
+    display: flex;
+    width: 80%;
+
+}
+
+label {
+    min-width: 10%;
+    text-align: right;
+    padding-right: 10px;
 }
 
 a {
-  color: #00B7FF;
+    padding: 30px 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+}
+
+
+a:hover {
+    background-color: #e7e7e7;
 }
