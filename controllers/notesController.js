@@ -10,17 +10,17 @@ module.exports.createNote = function(req, res)
     res.render("note");
 };
 
-/*module.exports.createPizza = function(req, res)
+module.exports.saveNote = function(req, res)
 {
     var order = store.add(req.body.name, "unkown", function(err, order) {
         res.render("succeeded", order);
     });
-};*/
+};
 
 module.exports.editNote = function(req, res)
 {
     store.get(req.params.id, function(err, note) {
-        res.render("editNote", note);
+        res.render("note", note);
     });
 };
 
