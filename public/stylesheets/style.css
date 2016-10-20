@@ -35,7 +35,7 @@ input[type="checkbox"] {
 input[type="checkbox"] + label{
     padding-left: 0.5em;
 }
-.flex-outer button, .flex-outer a{
+.flex-outer button, .flex-outer a, .flex-index button, .flex-index a{
     margin: 0.5em 0.5em 0 0;
     padding: 0.5em;
     flex: 1 180px;
@@ -48,6 +48,18 @@ input[type="checkbox"] + label{
     .leftspace{
         margin-left: 0px;
     }
+}
+
+.flex-index div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0.5em 0 0.5em 0;
+}
+
+.flex-index .showRight {
+    margin-left: auto;
 }
 
 a, button {
