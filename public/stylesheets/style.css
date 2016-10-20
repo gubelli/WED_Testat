@@ -35,11 +35,11 @@ input[type="checkbox"] {
 input[type="checkbox"] + label{
     padding-left: 0.5em;
 }
-.flex-outer button{
+.flex-outer button, .flex-outer a{
     margin: 0.5em 0.5em 0 0;
     padding: 0.5em;
     flex: 1 180px;
-    max-width: 200px;
+    max-width: 180px;
 }
 .leftspace{
     margin-left: 220px;
@@ -48,4 +48,25 @@ input[type="checkbox"] + label{
     .leftspace{
         margin-left: 0px;
     }
+}
+
+a, button {
+    padding: 30px 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.2s; /* Safari */
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+
+}
+
+
+a:hover, button:hover {
+    background-color: #e7e7e7;
 }
