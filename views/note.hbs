@@ -1,69 +1,22 @@
-<html>
-<head>
-    <style>
-        body{
-            padding: 2em;
-        }
-        .container {
-            width: 100%;
-            margin: 0 auto;
-        }
-        .flex-outer div{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            align-content: flex-start;
-            padding: 0.5em 0 0.5em 0;
-        }
-        .flex-outer > div:not(:last-child) {
-            margin-bottom: 0.5em;
-        }
-        .flex-outer div label{
-            font-weight: bold;
-            flex: 1 220px;
-            max-width: 220px;
-        }
-        .flex-outer input:not([type="checkbox"]), .flex-outer textarea {
-            flex: 1 80%;
-            padding: 0.5em;
-        }
-        .flex-outer .empty{
-            flex: 0 10 220px;
-        }
-        input[type="checkbox"] {
-            width: 1em;
-        }
-        input[type="checkbox"] + label{
-            padding-left: 0.5em;
-        }
-        .flex-outer button{
-            margin: 0.5em 0.5em 0 0;
-            padding: 0.5em;
-            flex: 1 180px;
-            max-width: 200px;
-        }
-        .leftspace{
-            margin-left: 220px;
-        }
-        @media (max-width: 70em) {
-            .leftspace{
-                margin-left: 0px;
-            }
-        }
-    </style>
-</head>
-<body></body>
-<header><h1>Notiz erstellen</h1></header>
+
+<header>
+    <h1>
+        {{#if title}}
+            <h1>Edit note</h1>
+        {{else}}
+            <h1>Create note</h1>
+        {{/if}}
+    </h1>
+</header>
 <div class="container">
     <form method="post">
         <div class="flex-outer">
-            <div><label for="title">Titel</label><input id="title" type="text" required></div>
+            <div><label for="title">Title</label><input id="title" type="text" required value=""></div>
             <div><label for="description">Description</label><textarea id="description"></textarea></div>
-            <div><label for="prio">Priority</label><input id="prio" type="number" min="0" max="5" required></div>
-            <div><label for="due">End Date</label><input id="due" type="date"></div>
+            <div><label for="prio">Priority</label><input id="prio" type="number" min="0" max="5" required value=""></div>
+            <div><label for="due">End Date</label><input id="due" type="date" value=""></div>
             <div class="leftspace"><input type="checkbox" id="state" value="1"><label for="state">Done!</label></div>
             <div class="leftspace"><button type="submit">Submit</button><button type="button">Cancel</button></div>
         </div>
     </form>
-    </div>
-</html>
+</div>
