@@ -11,11 +11,11 @@
 <div class="container">
     <form method="post">
         <div class="flex-outer">
-            <div><label for="title">Title</label><input id="title" type="text" required value=""></div>
-            <div><label for="description">Description</label><textarea id="description"></textarea></div>
-            <div><label for="prio">Priority</label><input id="prio" type="number" min="0" max="5" required value=""></div>
-            <div><label for="due">End Date</label><input id="due" type="date" value=""></div>
-            <div class="leftspace"><input type="checkbox" id="state" value="1"><label for="state">Done!</label></div>
+            <div><label for="title">Title</label><input name="title" id="title" type="text" required {{#if title}}value="{{title}}"{{/if}}></div>
+            <div><label for="description">Description</label><textarea name="description" id="description">{{#if desc}}{{desc}}{{/if}}</textarea></div>
+            <div><label for="prio">Priority</label><input name="prio" id="prio" type="number" min="0" max="5" required {{#if prio}}value="{{prio}}"{{/if}}></div>
+            <div><label for="due">End Date</label><input name="due" id="due" type="date" value="{{due}}"></div>
+            <div class="leftspace"><input type="checkbox" name="state" id="state" {{#if finish}}checked{{/if}}><label for="state">Done!</label></div>
             <div class="leftspace"><button type="submit">Submit</button><button type="button">Cancel</button></div>
         </div>
     </form>
