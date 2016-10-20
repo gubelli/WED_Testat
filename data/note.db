@@ -1,4 +1,5 @@
-{"title":"Test1","desc":"Beschreibung von 1","prio":2,"due":"\"\\\"2016-10-13T12:22:18.023Z\\\"\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":false,"_id":"tTtOWTz5Mk1y3Q3l"}
-{"title":"Test2","desc":"Beschreibung von 2","prio":1,"due":"\"\\\"2016-10-13T12:22:18.023Z\\\"\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":true,"_id":"9KaSoIwLr6pwgdTU"}
-{"title":"Test3","desc":"Beschreibung von 3","prio":4,"due":"\"\\\"2016-10-13T12:22:18.024Z\\\"\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":false,"_id":"P4GL1av1Qe69dWG4"}
-{"title":"Test4","desc":"Beschreibung von 4","prio":5,"due":"\"\\\"2016-10-13T12:22:18.024Z\\\"\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":true,"_id":"23dOqeIDThyDmGyT"}
+{"title":"Test4","desc":"Beschreibung von 4","prio":5,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":true,"_id":"23dOqeIDThyDmGyT"}
+{"title":"Test2","desc":"Beschreibung von 2","prio":1,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":true,"_id":"9KaSoIwLr6pwgdTU"}
+{"title":"Test3","desc":"Beschreibung von 3","prio":4,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":false,"_id":"P4GL1av1Qe69dWG4"}
+{"title":"Test1","desc":"Beschreibung von 1","prio":2,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":false,"_id":"tTtOWTz5Mk1y3Q3l"}
+{"title":"Test9","desc":"Beschreibung von 9","prio":"2","due":"\"2016-10-20\"","create":"\"2016-10-20T11:19:48.829Z\"","finish":false,"_id":"fJmc7HzvcNdLtzXL"}

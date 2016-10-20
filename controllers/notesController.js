@@ -12,14 +12,16 @@ module.exports.createNote = function(req, res)
 
 module.exports.saveNote = function(req, res)
 {
-    var order = store.add(req.body.name, "unkown", function(err, order) {
-        res.render("succeeded", order);
+    var state = (req.body.state == 'on');
+    var order = store.add(req.body.title, req.body.description, req.body.prio, req.body.due, state, function(err, order) {
+        res.render("index");
     });
 };
 
 module.exports.editNote = function(req, res)
 {
     store.get(req.params.id, function(err, note) {
+        note.due = JSON.parse(note.due);
         res.render("note", note);
     });
 };
