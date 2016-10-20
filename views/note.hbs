@@ -1,0 +1,22 @@
+
+<header>
+    <h1>
+        {{#if title}}
+            <h1>Edit note</h1>
+        {{else}}
+            <h1>Create note</h1>
+        {{/if}}
+    </h1>
+</header>
+<div class="container">
+    <form method="post">
+        <div class="flex-outer">
+            <div><label for="title">Title</label><input id="title" type="text" required value=""></div>
+            <div><label for="description">Description</label><textarea id="description"></textarea></div>
+            <div><label for="prio">Priority</label><input id="prio" type="number" min="0" max="5" required value=""></div>
+            <div><label for="due">End Date</label><input id="due" type="date" value=""></div>
+            <div class="leftspace"><input type="checkbox" id="state" value="1"><label for="state">Done!</label></div>
+            <div class="leftspace"><button type="submit">Submit</button><button type="button">Cancel</button></div>
+        </div>
+    </form>
+</div>
