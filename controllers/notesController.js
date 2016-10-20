@@ -2,6 +2,22 @@ var store = require("../services/noteStore.js");
 
 module.exports.showIndex = function(req, res)
 {
+    if(req.query.order){
+        switch(req.query.order){
+            case 'fdate':
+                break;
+            case 'cdate':
+                break;
+            case 'importance':
+                break;
+        }
+    }else if(req.query.style == 'black'){
+
+    }else if(req.query.filter == true){
+
+    }else{
+
+    }
     res.render("index");
 };
 
@@ -25,12 +41,3 @@ module.exports.editNote = function(req, res)
         res.render("note", note);
     });
 };
-
-/*
-module.exports.deleteOrder =  function (req, res)
-{
-    store.delete(  req.params.id , function(err, order) {
-        res.render("showorder", order);
-    });
-};
-*/
