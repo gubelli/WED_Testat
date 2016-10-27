@@ -1,0 +1,26 @@
+<div class="flex-index">
+    <div class="linkTop">
+        <a href="/">Create new note</a>
+        <a href="/" class="showRight">Style switcher</a>
+    </div>
+    <div class="linkBottom">
+        <a href="/">By creating date</a>
+        <a href="/">By deadline</a>
+        <a href="/">By importance</a>
+        <div class="showRight"><a href="/">Hide finished notes</a></div>
+    </div>
+
+    {{#each notes}}
+    <div>
+        <label>
+            <input type="checkbox" value="finished" {{#if finish}}checked{{/if}}>
+            Finished
+        </label>
+        <label>-[DueIn]-</label>
+        <label>{{title}}</label>
+        {{#if prio}}<img src="/media/prio{{prio}}.png">{{/if}}
+        <textarea rows="3">{{desc}}</textarea>
+        <button type="button">Edit</button>
+    </div>
+    {{/each}}
+</div>
