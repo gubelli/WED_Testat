@@ -15,11 +15,11 @@ module.exports.showIndex = function(req, res)
         }
     }else if(req.query.style == 'black'){
 
-    }else if(req.query.filter == true){
+    }else if(req.query.filter == 'true'){
         filter = {finish: false};
     }
     store.all(filter,function(err,notes){
-        console.dir({notes : notes});
+        //console.dir({notes : notes});
         res.render("index",{notes : notes});
     });
 };

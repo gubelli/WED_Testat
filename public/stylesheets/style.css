@@ -6,7 +6,6 @@ body {
 /*End of Global*/
 /*Button Styles*/
 a, button {
-    padding: 30px 1em;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -18,6 +17,7 @@ a, button {
     background-color: white;
     color: black;
     border: 2px solid #e7e7e7;
+    padding: 0.5em;
 }
 a:hover, button:hover {
     background-color: #e7e7e7;
@@ -58,7 +58,6 @@ input[type="checkbox"] + label{
 }
 .flex-outer button, .flex-outer a, .flex-index button, .flex-index a{
     margin: 0.5em 0.5em 0 0;
-    padding: 0.5em;
     flex: 1 180px;
     max-width: 180px;
 }
@@ -85,13 +84,25 @@ input[type="checkbox"] + label{
     flex-wrap: wrap;
 }
 .wrapper div{
+    display: flex;
     flex: 1 100%;
 }
 .wrapper div a{
     margin: 0.5em 0.5em 0 0;
-    padding: 0.5em;
     flex: 1 180px;
     max-width: 180px;
 }
 
+.right{
+
+}
+div.inner-wrapper{
+    flex: 1 100%;
+}
+div.inner-wrapper p{
+    flex: 0 0 200px;
+}
+div.inner-wrapper textarea{
+    flex: 1 80%;
+}
 /*End of Note Overview*/
