@@ -1,26 +1,20 @@
-<div class="flex-index">
-    <div class="linkTop">
-        <a href="/">Create new note</a>
-        <a href="/" class="showRight">Style switcher</a>
-    </div>
-    <div class="linkBottom">
-        <a href="/">By creating date</a>
-        <a href="/">By deadline</a>
-        <a href="/">By importance</a>
-        <div class="showRight"><a href="/">Hide finished notes</a></div>
-    </div>
+<div class="wrapper">
+        <div>
+            <a href="/notes">Create new note</a>
+            <a class="right" href="/?style=black">Style switcher</a>
+        </div>
+        <div>
+            <a href="/?order=cdate">By creating date</a>
+            <a href="/?order=fdate">By deadline</a>
+            <a href="/?order=importance">By importance</a>
+            <a class="right" href="/?filter=true">Hide finished</a>
+        </div>
 
     <div>
-        <label>
-            <input type="checkbox" value="finished">
-            Finished
-        </label>
-        <label>-[DueIn]-</label>
-        <label>-Note Title-</label>
-        <label>-****-</label>
-        <textarea rows="3">
-            -Note Desc-
-        </textarea>
-        <button type="button">Edit</button>
+        <p>in one month</p><p>Title</p>
+        <p>Prio</p>
+        <input type="checkbox" name="state" id="state"><label for="state">Finished</label>
+        <textarea readonly>Description</textarea>
+        <a href="/notes/id">Edit</a>
     </div>
 </div>

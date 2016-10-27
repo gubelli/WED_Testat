@@ -31,8 +31,8 @@ function publicFinish(id, state, callback) {
 
 function publicGet(id, callback)
 {   db.findOne({ _id: id }, function (err, doc) {
-    callback( err, doc);
-});
+        callback( err, doc);
+    });
 }
 
 function publicAll(filter, callback)
