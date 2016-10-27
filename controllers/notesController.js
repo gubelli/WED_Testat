@@ -2,6 +2,8 @@ var store = require("../services/noteStore.js");
 
 module.exports.showIndex = function(req, res)
 {
+    var filter = {};
+
     if(req.query.order){
         switch(req.query.order){
             case 'fdate':
@@ -14,11 +16,11 @@ module.exports.showIndex = function(req, res)
     }else if(req.query.style == 'black'){
 
     }else if(req.query.filter == true){
-
-    }else{
-
+        filter = {finish: false};
     }
-    res.render("index");
+    store.all(filter,function(err,notes){
+        res.render(index,notes);
+    });
 };
 
 module.exports.createNote = function(req, res)

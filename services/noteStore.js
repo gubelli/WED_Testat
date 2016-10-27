@@ -35,9 +35,9 @@ function publicGet(id, callback)
 });
 }
 
-function publicAll()
+function publicAll(filter, callback)
 {
-    db.find({}, function (err, docs) {
+    db.find(filter, function (err, docs) {
         callback( err, docs);
     });
 }
