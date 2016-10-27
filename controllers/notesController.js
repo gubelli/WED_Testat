@@ -19,7 +19,8 @@ module.exports.showIndex = function(req, res)
         filter = {finish: false};
     }
     store.all(filter,function(err,notes){
-        res.render(index,notes);
+        console.dir({notes : notes});
+        res.render("index",{notes : notes});
     });
 };
 
