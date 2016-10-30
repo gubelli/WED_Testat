@@ -18,7 +18,10 @@
                 {{#if prio}}<img src="/media/prio{{prio}}.png">{{/if}}
             </div>
             <div class="inner-wrapper">
-                <input type="checkbox" name="state" id="state" {{#if finish}}checked{{/if}}><label for="state">Finished</label>
+                <label for="state">
+                    <input type="checkbox" name="state" id="state" {{#if finish}}checked{{/if}}>
+                    Finished
+                </label>
                 <textarea readonly>{{desc}}</textarea>
                 <a href="/notes/"{{id}}>Edit</a>
             </div>

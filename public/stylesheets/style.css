@@ -79,30 +79,41 @@ input[type="checkbox"] + label{
 }
 /*End of Note Editor*/
 /*Note Overview*/
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
-}
 .wrapper div{
     display: flex;
-    flex: 1 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
+
 .wrapper div a{
-    margin: 0.5em 0.5em 0 0;
-    flex: 1 180px;
-    max-width: 180px;
+    flex: 0 0 180px;
 }
 
-.right{
-
+.wrapper div a.right{
+    margin-left: auto;
 }
+
 div.inner-wrapper{
+    display: flex;
     flex: 1 100%;
+    align-items: center;
 }
-div.inner-wrapper p{
-    flex: 0 0 200px;
+
+div.inner-wrapper p, div.inner-wrapper img, div.inner-wrapper label{
+    flex: 0 0 100px;
+}
+div.inner-wrapper img{
+    margin-left: auto;
+    margin-right: 215px;
+}
+div.inner-wrapper p:nth-child(2){
+    margin-left: 50px;
+    font-weight: bold;
 }
 div.inner-wrapper textarea{
-    flex: 1 80%;
+    margin-left: 50px;
+    margin-right: 10px;
+    flex: 1 300px;
+    min-height: 80px;
 }
 /*End of Note Overview*/
