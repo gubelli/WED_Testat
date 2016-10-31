@@ -116,4 +116,37 @@ div.inner-wrapper textarea{
     flex: 1 300px;
     min-height: 80px;
 }
+
+@media only screen and (max-width: 950px){
+    .noteview{
+        border: dotted grey thin;
+        margin-bottom: 0.5em;
+        padding: 0.5em;
+    }
+    .wrapper div a{
+        flex: 1 100%;
+    }
+    .wrapper div a[href^="/notes/"]{
+        flex: 1 200px;
+        max-width: 200px;
+        margin: 0.5em 0 0 0;
+    }
+    div.inner-wrapper p, div.inner-wrapper label{
+        flex: 0 0 100%;
+    }
+    div.inner-wrapper p:nth-child(2), div.inner-wrapper img{
+        margin: 0;
+        flex: 0 0 100px;
+    }
+    div.inner-wrapper img{
+        margin-left: auto;
+    }
+    div.inner-wrapper textarea{
+        flex: 1 100%;
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 550px) {
+    body{ padding: 0;}
+}
 /*End of Note Overview*/
