@@ -23,10 +23,16 @@ function publicAddNote(title, desc, prio, due, state, callback)
     });
 }
 
-function publicFinish(id, state, callback) {
-    db.update({_id: id}, {$set: {"finish": state}}, {}, function (err, doc) {
-        publicGet(id,callback);
-    });
+function publicFinish(id, callback) {
+    publicGet(id, function (err, doc) {
+        if(!err){
+            var state = !doc.finish;
+            db.update({_id: id}, {$set: {"finish": state}}, {}, function (err, doc) {
+                callback(err,doc);
+            });
+        }
+    })
+
 }
 
 function publicGet(id, callback)

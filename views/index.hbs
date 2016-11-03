@@ -13,13 +13,13 @@
     {{#each notes}}
         <div class="noteview">
             <div class="inner-wrapper">
-                <p>in one month</p>
+                <p>{{due}}</p>
                 <p>{{title}}</p>
                 {{#if prio}}<img src="/media/prio{{prio}}.png">{{/if}}
             </div>
             <div class="inner-wrapper">
                 <label for="state">
-                    <input type="checkbox" name="state" id="state" {{#if finish}}checked{{/if}}>
+                    <input type="checkbox" name="state" id="state" onchange="document.location.href='/notes/{{_id}}/update/'" {{#if finish}}checked{{/if}}>
                     Finished
                 </label>
                 <textarea readonly>{{desc}}</textarea>
