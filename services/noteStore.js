@@ -5,7 +5,7 @@ function Note(title, desc, prio, due, state)
 {
     this.title = title;
     this.desc = desc;
-    this.prio = prio;
+    this.prio = parseInt(prio);
     this.due = JSON.stringify(due);
     this.create = JSON.stringify(new Date());
     this.finish = state;
@@ -41,11 +41,10 @@ function publicGet(id, callback)
     });
 }
 
-function publicAll(filter, callback)
+function publicAll(filter, sorter, callback)
 {
-    db.find(filter, function (err, docs) {
-        callback( err, docs);
-    });
+    db.find(filter).sort(sorter).exec( function (err, docs) {
+        callback( err, docs);});
 }
 
 /*

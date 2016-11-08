@@ -18,10 +18,12 @@
                 {{#if prio}}<img src="/media/prio{{prio}}.png">{{/if}}
             </div>
             <div class="inner-wrapper">
+                <form method="post" action="/notes/{{_id}}/update/">
                 <label for="state">
-                    <input type="checkbox" name="state" id="state" onchange="document.location.href='/notes/{{_id}}/update/'" {{#if finish}}checked{{/if}}>
+                    <input type="checkbox" name="state" id="state" onchange="this.form.submit()" {{#if finish}}checked{{/if}}>
                     Finished
                 </label>
+                </form>
                 <textarea readonly>{{desc}}</textarea>
                 <a href="/notes/"{{id}}>Edit</a>
             </div>
