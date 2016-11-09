@@ -1,13 +1,13 @@
 <div class="wrapper">
         <div>
             <a href="/notes">Create new note</a>
-            <a class="right" href="/?style=black">Style switcher</a>
+            <a class="right" href={{#if style}}"/?style=white"{{else}}"/?style=black"{{/if}}">Style switcher</a>
         </div>
         <div>
             <a href="/?order=cdate">By creating date</a>
             <a href="/?order=fdate">By deadline</a>
             <a href="/?order=importance">By importance</a>
-            <a class="right" href="/?filter=true">Hide finished</a>
+            <a class="right" href={{#if filter}}"/?filter=false"{{else}}"/?filter=true"{{/if}}">Hide finished</a>
         </div>
 
     {{#each notes}}
