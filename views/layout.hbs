@@ -3,7 +3,7 @@
   <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>{{#if title}}{{title}}{{else}}Note app{{/if}}</title>
-      <link rel='stylesheet' href={{#if style}}'/stylesheets/style-black.css'{{else}}'/stylesheets/style.css'{{/if}} />
+      <link rel='stylesheet' href={{#compare filter.style '==' "black"}}'/stylesheets/style-black.css'{{else}}'/stylesheets/style.css'{{/compare}} />
   </head>
   <body>
     {{{body}}}

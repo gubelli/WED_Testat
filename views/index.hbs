@@ -1,15 +1,16 @@
 <div class="wrapper">
+    {{#with filter}}
         <div>
             <a href="/notes">Create new note</a>
-            <a class="right" href={{#if style}}"/?style=white"{{else}}"/?style=black"{{/if}}">Style switcher</a>
+            <a class="right" href={{#compare style '==' "black"}}"/?style=white"{{else}}"/?style=black"{{/compare}}">Style switcher</a>
         </div>
         <div>
             <a href="/?order=cdate">By creating date</a>
             <a href="/?order=fdate">By deadline</a>
             <a href="/?order=importance">By importance</a>
-            <a class="right" href={{#if filter}}"/?filter=false"{{else}}"/?filter=true"{{/if}}">Hide finished</a>
+            <a class="right" href={{#compare show '==' "true"}}"/?filter=false"{{else}}"/?filter=true"{{/compare}}">Hide finished</a>
         </div>
-
+    {{/with}}
     {{#each notes}}
         <div class="noteview">
             <div class="inner-wrapper">
