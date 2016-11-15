@@ -44,7 +44,7 @@ function publicSave(id, title, desc, prio, due, state, callback){
                 callback(err,doc);
             });
         }
-    })
+    });
 }
 
 function publicGet(id, callback)
@@ -56,7 +56,8 @@ function publicGet(id, callback)
 function publicAll(filter, sorter, callback)
 {
     db.find(filter).sort(sorter).exec( function (err, docs) {
-        callback( err, docs);});
+        callback( err, docs);
+    });
 }
 
 module.exports = {add : publicAddNote, state : publicFinish, get : publicGet, all : publicAll, save: publicSave};
