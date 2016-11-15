@@ -35,6 +35,16 @@ function publicFinish(id, callback) {
 
 }
 
+function publicSave(id, title, desc, prio, due, state, callback){
+    publicGet(id, function(err, doc){
+        if(!err){
+            db.update({_id: id},{$set: {"title": title, "desc": desc, "prio": prio, "due": JSON.stringify(due), "finish": state}},{}, function (err, doc){
+                callback(err,doc);
+            });
+        }
+    })
+}
+
 function publicGet(id, callback)
 {   db.findOne({ _id: id }, function (err, doc) {
         callback( err, doc);
@@ -47,25 +57,4 @@ function publicAll(filter, sorter, callback)
         callback( err, docs);});
 }
 
-/*
- // Let's say the database contains these 4 documents
- // doc1 = { _id: 'id1', planet: 'Mars', system: 'solar', inhabited: false, satellites: ['Phobos', 'Deimos'] }
- // doc2 = { _id: 'id2', planet: 'Earth', system: 'solar', inhabited: true, humans: { genders: 2, eyes: true } }
- // doc3 = { _id: 'id3', planet: 'Jupiter', system: 'solar', inhabited: false }
- // doc4 = { _id: 'id4', planet: 'Omicron Persei 8', system: 'futurama', inhabited: true, humans: { genders: 7 } }
-
- // No query used means all results are returned (before the Cursor modifiers)
- db.find({}).sort({ planet: 1 }).skip(1).limit(2).exec(function (err, docs) {
- // docs is [doc3, doc1]
- });
-
- // You can sort in reverse order like this
- db.find({ system: 'solar' }).sort({ planet: -1 }).exec(function (err, docs) {
- // docs is [doc1, doc3, doc2]
- });
-
- // You can sort on one field, then another, and so on like this:
- db.find({}).sort({ firstField: 1, secondField: -1 }) ...   // You understand how this works!
- */
-
-module.exports = {add : publicAddNote, state : publicFinish, get : publicGet, all : publicAll};
+module.exports = {add : publicAddNote, state : publicFinish, get : publicGet, all : publicAll, save: publicSave};

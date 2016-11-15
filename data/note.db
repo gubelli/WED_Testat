@@ -7,3 +7,7 @@
 {"title":"Test9","desc":"Beschreibung von 9","prio":2,"due":"\"2016-10-20\"","create":"\"2016-10-20T11:19:48.829Z\"","finish":false,"_id":"fJmc7HzvcNdLtzXL"}
 {"title":"Mynote","desc":"Row1\r\nRow2\r\nRow3\r\n\r\nRow5","prio":5,"due":"\"2016-10-20\"","create":"\"2016-10-20T11:51:35.168Z\"","finish":true,"_id":"ohHkqzTCqCjDcS4D"}
 {"title":"Test1","desc":"Beschreibung von 1","prio":2,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":false,"_id":"tTtOWTz5Mk1y3Q3l"}
+{"title":"Test4","desc":"Beschreibung von 4, 4.5","prio":"5","due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":false,"_id":"23dOqeIDThyDmGyT"}
+{"title":"Test4","desc":"Beschreibung von 4, 4.5","prio":"2","due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":false,"_id":"23dOqeIDThyDmGyT"}
+{"title":"Test4","desc":"Beschreibung von 4, 4.5","prio":"2","due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":true,"_id":"23dOqeIDThyDmGyT"}
+{"title":"Test432","desc":"Beschreibung von 4, 4.5","prio":"2","due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":true,"_id":"23dOqeIDThyDmGyT"}
