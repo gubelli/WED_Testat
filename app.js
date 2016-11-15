@@ -33,10 +33,7 @@ hbs.registerHelper('compare', function (lvalue, operator, rvalue, options) {
     rvalue = operator;
     operator = "===";
   }
-  console.log(lvalue);
-  console.log(operator);
-  console.log(rvalue);
-  
+
   operators = {
     '==': function (l, r) { return l == r; },
     '===': function (l, r) { return l === r; },

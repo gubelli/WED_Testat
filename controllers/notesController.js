@@ -6,6 +6,7 @@ module.exports.showIndex = function(req, res)
 {
 
     filterstore.set(req);
+    console.dir(req.session.filter);
 
     //TODO: Due and Overdue
     store.all(filterstore.getShow(req), filterstore.getSorter(req),function(err,notes){
@@ -28,7 +29,7 @@ module.exports.showIndex = function(req, res)
 
 module.exports.createNote = function(req, res)
 {
-    res.render("note");
+    res.render("note",{filter : req.session.filter});
 };
 
 module.exports.saveNote = function(req, res)
@@ -47,10 +48,21 @@ module.exports.editNote = function(req, res)
         res.render("note", note);
     });
 };
+
 module.exports.updateNote = function (req, res) {
     store.state(req.params.id,function(err,note){
         //Show Index
         res.redirect("/");
     });
 };
+
+module.exports.saveEdit = function(req,res){
+    var state = (req.body.state == 'on');
+    var id = req.params.id;
+
+    store.save(id, req.body.title, req.body.description, req.body.prio, req.body.due, state, function(err, note) {
+        //Show Index
+        res.redirect("/");
+    });
+}
 

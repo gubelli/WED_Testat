@@ -5,9 +5,9 @@
             <a class="right" href={{#compare style '==' "black"}}"/?style=white"{{else}}"/?style=black"{{/compare}}">Style switcher</a>
         </div>
         <div>
-            <a href="/?order=cdate">By creating date</a>
-            <a href="/?order=fdate">By deadline</a>
-            <a href="/?order=importance">By importance</a>
+            <a href={{#compare sorter '==' "cdate"}}"/?order=rcdate"{{else}}"/?order=cdate"{{/compare}}>By creating date</a>
+            <a href={{#compare sorter '==' "fdate"}}"/?order=rfdate"{{else}}"/?order=fdate"{{/compare}}>By deadline</a>
+            <a href={{#compare sorter '==' "importance"}}"/?order=rimportance"{{else}}"/?order=importance"{{/compare}}>By importance</a>
             <a class="right" href={{#compare show '==' "true"}}"/?filter=false"{{else}}"/?filter=true"{{/compare}}">Hide finished</a>
         </div>
     {{/with}}
@@ -26,7 +26,7 @@
                 </label>
                 </form>
                 <textarea readonly>{{desc}}</textarea>
-                <a href="/notes/"{{id}}>Edit</a>
+                <a href="/notes/{{_id}}">Edit</a>
             </div>
         </div>
     {{/each}}
