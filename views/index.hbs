@@ -8,7 +8,11 @@
             <a href={{#compare sorter '==' "cdate"}}"/?order=rcdate"{{else}}"/?order=cdate"{{/compare}}>By creating date</a>
             <a href={{#compare sorter '==' "fdate"}}"/?order=rfdate"{{else}}"/?order=fdate"{{/compare}}>By deadline</a>
             <a href={{#compare sorter '==' "importance"}}"/?order=rimportance"{{else}}"/?order=importance"{{/compare}}>By importance</a>
-            <a class="right" href={{#compare show '==' "true"}}"/?filter=false"{{else}}"/?filter=true"{{/compare}}">Hide finished</a>
+            {{#compare show '==' "true"}}
+                <a class="right" href="/?filter=false">Show finished</a>
+            {{else}}
+                <a class="right" href="/?filter=true">Hide finished</a>
+            {{/compare}}
         </div>
     {{/with}}
     {{#each notes}}

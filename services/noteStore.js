@@ -5,8 +5,8 @@ function Note(title, desc, prio, due, state)
 {
     this.title = title;
     this.desc = desc;
-    this.prio = parseInt(prio);
-    this.due = JSON.stringify(due);
+    this.prio = prio == "" ? null : parseInt(prio);
+    this.due = due == "" ? null : JSON.stringify(due);
     this.create = JSON.stringify(new Date());
     this.finish = state;
 }
