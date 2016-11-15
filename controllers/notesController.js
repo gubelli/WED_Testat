@@ -17,11 +17,15 @@ module.exports.showIndex = function(req, res)
                 var diff = endDate.diff(startDate, 'days');
                 if(diff < 1){
                     note.due = "Overdue";
-                }else{
-                    note.due = diff + " days left"
+                } else if (diff < 7) {
+                    note.due = diff + " days left";
+                } else if (diff < 30) {
+                    note.due = Math.round(diff / 7) + " weeks left";
+                } else {
+                    note.due = Math.round(diff / 30) + " months left";
                 }
             }
-            ;
+
         });
         res.render("index",{notes : notes, filter: req.session.filter});
     });
