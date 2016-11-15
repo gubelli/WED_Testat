@@ -7,8 +7,7 @@ module.exports.showIndex = function(req, res)
 
     filterstore.set(req);
     console.dir(req.session.filter);
-
-    //TODO: Due and Overdue
+    
     store.all(filterstore.getShow(req), filterstore.getSorter(req),function(err,notes){
         var startDate = moment(new Date(),'YYYY-MM-DD');
         notes.forEach(function(note){
@@ -68,5 +67,5 @@ module.exports.saveEdit = function(req,res){
         //Show Index
         res.redirect("/");
     });
-}
+};
 
