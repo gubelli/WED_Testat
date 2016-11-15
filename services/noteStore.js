@@ -38,7 +38,9 @@ function publicFinish(id, callback) {
 function publicSave(id, title, desc, prio, due, state, callback){
     publicGet(id, function(err, doc){
         if(!err){
-            db.update({_id: id},{$set: {"title": title, "desc": desc, "prio": prio, "due": JSON.stringify(due), "finish": state}},{}, function (err, doc){
+            duedate = due == "" ? null : JSON.stringify(due);
+            prio = prio == "" ? null : parseInt(prio);
+            db.update({_id: id},{$set: {"title": title, "desc": desc, "prio": prio, "due": duedate, "finish": state}},{}, function (err, doc){
                 callback(err,doc);
             });
         }
