@@ -1,7 +1,5 @@
 /*Global*/
 body {
-    padding: 2em;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
     background-color: black;
     color: white;
 }
@@ -13,155 +11,10 @@ textarea, input{
 /*End of Global*/
 /*Button Styles*/
 a, button {
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0.2em 0.1em;
-    -webkit-transition-duration: 0.2s; /* Safari */
-    transition-duration: 0.2s;
-    cursor: pointer;
     color: white;
     background-color: blue;
-    padding: 0.5em;
 }
 a:hover, button:hover {
     background-color: lightblue;
 }
 /*End of Button Styles*/
-/*Note Editor*/
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-.flex-outer div{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    padding: 0.5em 0 0.5em 0;
-}
-.flex-outer > div:not(:last-child) {
-    margin-bottom: 0.5em;
-}
-.flex-outer div label{
-    font-weight: bold;
-    flex: 1 220px;
-    max-width: 220px;
-}
-.flex-outer input:not([type="checkbox"]), .flex-outer textarea {
-    flex: 1 80%;
-    padding: 0.5em;
-}
-.flex-outer .empty{
-    flex: 0 10 220px;
-}
-input[type="checkbox"] {
-    width: 1em;
-}
-input[type="checkbox"] + label{
-    padding-left: 0.5em;
-}
-.flex-outer button, .flex-outer a, .flex-index button, .flex-index a{
-    margin: 0.5em 0.5em 0 0;
-    flex: 1 180px;
-    max-width: 180px;
-}
-.leftspace{
-    margin-left: 220px;
-}
-@media (max-width: 78em) {
-    .leftspace{
-        margin-left: 0px;
-    }
-}
-
-.flex-index div{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    padding: 0.5em 0 0.5em 0;
-}
-/*End of Note Editor*/
-/*Note Overview*/
-.wrapper div{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.wrapper div a{
-    flex: 0 0 180px;
-}
-
-.wrapper div a.right{
-    margin-left: auto;
-}
-
-div.inner-wrapper{
-    display: flex;
-    flex: 1 100%;
-    max-width: 100%;
-    align-items: center;
-}
-
-div.inner-wrapper p, div.inner-wrapper img, div.inner-wrapper label{
-    flex: 0 0 100px;
-}
-div.inner-wrapper img{
-    margin-left: auto;
-    margin-right: 215px;
-}
-div.inner-wrapper p:nth-child(2){
-    margin-left: 50px;
-    font-weight: bold;
-}
-div.inner-wrapper textarea{
-    margin-left: 50px;
-    margin-right: 10px;
-    flex: 1 300px;
-    min-height: 80px;
-}
-
-@media only screen and (max-width: 950px){
-    .noteview{
-        border: dotted grey thin;
-        margin-top: 0.5em;
-        padding: 0.5em;
-    }
-    .wrapper div a{
-        flex: 1 100%;
-    }
-    .wrapper div:nth-child(1) a{
-        flex: 1 100px;
-    }
-    .wrapper div a[href^="/notes/"]{
-        flex: 1 200px;
-        max-width: 200px;
-        margin: 0.5em 0 0 0;
-        order: 4;
-    }
-    div.inner-wrapper p:nth-child(2) , div.inner-wrapper label{
-        flex: 0 0 100%;
-        margin: 0 0 0.5em 0;
-        order: 2;
-    }
-    div.inner-wrapper p , div.inner-wrapper img{
-        flex: 0 0 100px;
-        order: 1;
-        margin: 0 0 0.5em 0;
-    }
-    div.inner-wrapper img{
-        margin-left: auto;
-    }
-    div.inner-wrapper textarea{
-        flex: 1 1 100%;
-        margin: 0;
-        order: 3;
-    }
-}
-@media only screen and (max-width: 550px) {
-    body{ padding: 0;}
-}
-/*End of Note Overview*/

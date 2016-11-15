@@ -79,12 +79,17 @@ input[type="checkbox"] + label{
 }
 /*End of Note Editor*/
 /*Note Overview*/
+.empty h2{
+    width: 100%;
+}
+.empty img{
+    max-width: 100%;
+}
 .wrapper div{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
-
 .wrapper div a{
     flex: 0 0 180px;
 }
@@ -102,6 +107,9 @@ div.inner-wrapper{
 
 div.inner-wrapper p, div.inner-wrapper img, div.inner-wrapper label{
     flex: 0 0 100px;
+}
+div.inner-wrapper p:nth-child(2){
+    flex: 1 0 200px;
 }
 div.inner-wrapper img{
     margin-left: auto;

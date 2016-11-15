@@ -1,12 +1,6 @@
-{"title":"Test432","desc":"Beschreibung von 4, 4.5","prio":"2","due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":false,"_id":"23dOqeIDThyDmGyT"}
-{"title":"Test2","desc":"Beschreibung von 2","prio":1,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":true,"_id":"9KaSoIwLr6pwgdTU"}
-{"title":"Military ^^","desc":"Military oww yeah","prio":3,"due":"\"2016-11-11\"","create":"\"2016-11-08T21:02:31.167Z\"","finish":false,"_id":"M6cSA9y5FnvZBlnw"}
-{"title":"Test3","desc":"Beschreibung von 3","prio":4,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.024Z\"","finish":true,"_id":"P4GL1av1Qe69dWG4"}
-{"title":"1212","desc":"12","prio":3,"due":"\"2016-11-06\"","create":"\"2016-11-03T13:47:19.346Z\"","finish":false,"_id":"TXnLAZC5ywq1sJw2"}
-{"title":"Hallo","desc":"","prio":null,"due":"\"\"","create":"\"2016-11-15T08:32:29.295Z\"","finish":true,"_id":"Yj5E9YYYpwt28gkI"}
-{"title":"Test99","desc":"Hallo","prio":2,"due":"\"2018-03-01\"","create":"\"2016-11-03T13:09:17.160Z\"","finish":true,"_id":"dUtRdlNzZR8X19Ig"}
-{"title":"Test9","desc":"Beschreibung von 9","prio":2,"due":"\"2016-10-20\"","create":"\"2016-10-20T11:19:48.829Z\"","finish":false,"_id":"fJmc7HzvcNdLtzXL"}
-{"title":"EmptyTest","desc":"","prio":null,"due":"\"\"","create":"\"2016-11-15T08:35:26.600Z\"","finish":false,"_id":"hxRevoACAweXu2Es"}
-{"title":"Mynote","desc":"Row1\r\nRow2\r\nRow3\r\n\r\nRow5","prio":5,"due":"\"2016-10-20\"","create":"\"2016-10-20T11:51:35.168Z\"","finish":true,"_id":"ohHkqzTCqCjDcS4D"}
-{"title":"Test1","desc":"Beschreibung von 1","prio":2,"due":"\"2016-10-13\"","create":"\"2016-10-13T12:22:18.023Z\"","finish":false,"_id":"tTtOWTz5Mk1y3Q3l"}
-{"title":"empts2","desc":"","prio":null,"due":null,"create":"\"2016-11-15T08:37:51.703Z\"","finish":false,"_id":"e2wpFRI8VcsSI2el"}
+{"title":"WED Presentation","desc":"Uhlala","prio":5,"due":"\"2016-11-17\"","create":"\"2016-11-15T12:07:00.593Z\"","finish":false,"_id":"GpldvzN8vvJbgGZL"}
+{"title":"Test","desc":"Do some tests","prio":3,"due":null,"create":"\"2016-11-15T12:08:22.088Z\"","finish":false,"_id":"5Hdxl2DrjiQBwrUA"}
+{"title":"Test Lucas strange bug?","desc":"","prio":null,"due":null,"create":"\"2016-11-15T12:10:17.505Z\"","finish":false,"_id":"pTz3MXkaaTbofblX"}
+{"title":"Test Lucas strange bug?","desc":"","prio":null,"due":null,"create":"\"2016-11-15T12:10:17.505Z\"","finish":true,"_id":"pTz3MXkaaTbofblX"}
+{"title":"WED Presentation","desc":"Uhlala, lets do some extensions","prio":5,"due":"\"2016-11-17\"","create":"\"2016-11-15T12:07:00.593Z\"","finish":false,"_id":"GpldvzN8vvJbgGZL"}
+{"title":"Test","desc":"Do some tests","prio":4,"due":null,"create":"\"2016-11-15T12:08:22.088Z\"","finish":false,"_id":"5Hdxl2DrjiQBwrUA"}

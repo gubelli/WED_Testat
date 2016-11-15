@@ -15,6 +15,7 @@
             {{/compare}}
         </div>
     {{/with}}
+    {{#if notes}}
     {{#each notes}}
         <div class="noteview">
             <div class="inner-wrapper">
@@ -34,4 +35,10 @@
             </div>
         </div>
     {{/each}}
+    {{else}}
+        <div class="empty">
+            <h2>No notes to display</h2>
+            <img src="/media/empty-heart.jpg">
+        </div>
+    {{/if}}
 </div>
