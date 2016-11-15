@@ -22,6 +22,12 @@ a, button {
 a:hover, button:hover {
     background-color: #e7e7e7;
 }
+
+.active{
+    border: 2px solid blue;
+    background-color: aliceblue;
+    font-weight: bold;
+}
 /*End of Button Styles*/
 /*Note Editor*/
 .container {

@@ -5,9 +5,9 @@
             <a class="right" href={{#compare style '==' "black"}}"/?style=white"{{else}}"/?style=black"{{/compare}}">Style switcher</a>
         </div>
         <div>
-            <a href={{#compare sorter '==' "cdate"}}"/?order=rcdate"{{else}}"/?order=cdate"{{/compare}}>By creating date</a>
-            <a href={{#compare sorter '==' "fdate"}}"/?order=rfdate"{{else}}"/?order=fdate"{{/compare}}>By deadline</a>
-            <a href={{#compare sorter '==' "importance"}}"/?order=rimportance"{{else}}"/?order=importance"{{/compare}}>By importance</a>
+        <a href={{#compare sorter '==' "cdate"}}"/?order=rcdate"{{else}}"/?order=cdate"{{/compare}}{{#compare activElement '==' 2}}class="active"{{/compare}}>By creating date</a>
+            <a href={{#compare sorter '==' "fdate"}}"/?order=rfdate"{{else}}"/?order=fdate"{{/compare}}{{#compare activElement '==' 1}}class="active"{{/compare}}>By deadline</a>
+            <a href={{#compare sorter '==' "importance"}}"/?order=rimportance"{{else}}"/?order=importance"{{/compare}}{{#compare activElement '==' 3}}class="active"{{/compare}}>By importance</a>
             {{#compare show '==' "true"}}
                 <a class="right" href="/?filter=false">Show finished</a>
             {{else}}

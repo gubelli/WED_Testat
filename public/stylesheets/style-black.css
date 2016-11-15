@@ -17,4 +17,7 @@ a, button {
 a:hover, button:hover {
     background-color: lightblue;
 }
+.active{
+    color: black;
+}
 /*End of Button Styles*/
