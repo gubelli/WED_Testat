@@ -4,9 +4,7 @@ var moment = require('moment');
 
 module.exports.showIndex = function(req, res)
 {
-
     filterstore.set(req);
-    console.dir(req.session.filter);
 
     store.all(filterstore.getShow(req), filterstore.getSorter(req),function(err,notes){
         var startDate = moment(new Date(),'YYYY-MM-DD');

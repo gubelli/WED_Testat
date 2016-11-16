@@ -21,3 +21,6 @@ a:hover, button:hover {
     color: black;
 }
 /*End of Button Styles*/
+.empty h2{
+    background-color: blue;
+}

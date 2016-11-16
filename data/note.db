@@ -1,3 +1,5 @@
 {"title":"Test","desc":"Do some tests","prio":4,"due":null,"create":"\"2016-11-15T12:08:22.088Z\"","finish":false,"_id":"5Hdxl2DrjiQBwrUA"}
 {"title":"WED Presentation","desc":"Uhlala, lets do some extensions","prio":5,"due":"\"2016-11-17\"","create":"\"2016-11-15T12:07:00.593Z\"","finish":false,"_id":"GpldvzN8vvJbgGZL"}
 {"title":"Test Lucas strange bug?","desc":"","prio":null,"due":null,"create":"\"2016-11-15T12:10:17.505Z\"","finish":true,"_id":"pTz3MXkaaTbofblX"}
+{"title":"Test","desc":"Do some tests","prio":4,"due":null,"create":"\"2016-11-15T12:08:22.088Z\"","finish":true,"_id":"5Hdxl2DrjiQBwrUA"}
+{"title":"WED Presentation","desc":"Uhlala, lets do some extensions","prio":5,"due":"\"2016-11-17\"","create":"\"2016-11-15T12:07:00.593Z\"","finish":true,"_id":"GpldvzN8vvJbgGZL"}
