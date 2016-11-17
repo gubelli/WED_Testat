@@ -34,7 +34,7 @@ a:hover, button:hover {
     width: 100%;
     margin: 0 auto;
 }
-.flex-outer div{
+.flex-outer div, .flex-index div{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -74,14 +74,6 @@ input[type="checkbox"] + label{
     .leftspace{
         margin-left: 0px;
     }
-}
-
-.flex-index div{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    padding: 0.5em 0 0.5em 0;
 }
 /*End of Note Editor*/
 /*Note Overview*/

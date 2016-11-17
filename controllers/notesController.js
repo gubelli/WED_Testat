@@ -22,7 +22,6 @@ module.exports.showIndex = function(req, res)
                     note.due = Math.round(diff / 30) + " months left";
                 }
             }
-
         });
         res.render("index",{notes : notes, filter: req.session.filter});
     });
